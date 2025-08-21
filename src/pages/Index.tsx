@@ -16,62 +16,62 @@ const Index = () => {
 
   const artists = [
     {
-      name: "ARIA",
-      genre: "Electronic Pop",
-      story: "We helped ARIA grow from 10K to 500K Instagram followers in 5 months",
-      metrics: ["↑ 800% engagement", "3 viral TikTok videos (10M+ views)", "Spotify editorial playlist placement"],
+      name: "АРИНА",
+      genre: "Электронный поп",
+      story: "Мы помогли АРИНЕ вырасти с 10K до 500K подписчиков в Instagram за 5 месяцев",
+      metrics: ["↑ 800% вовлеченности", "3 вирусных видео в TikTok (10М+ просмотров)", "Попадание в редакционные плейлисты Spotify"],
       beforeFollowers: "10.2K",
       afterFollowers: "502.8K",
-      beforeLikes: "2.1K avg",
-      afterLikes: "45.7K avg",
-      duration: "5 months",
+      beforeLikes: "2.1K средний",
+      afterLikes: "45.7K средний",
+      duration: "5 месяцев",
       platforms: ["TikTok", "Instagram", "Spotify"]
     },
     {
-      name: "NEON WAVES",
-      genre: "Synthwave",
-      story: "Transformed NEON WAVES into a viral sensation across all platforms",
-      metrics: ["↑ 1200% monthly listeners", "Featured on 15 major playlists", "Brand deal with major electronics company"],
+      name: "НЕОН ВОЛНЫ",
+      genre: "Синтвейв",
+      story: "Превратили НЕОН ВОЛНЫ в вирусную сенсацию на всех платформах",
+      metrics: ["↑ 1200% месячных слушателей", "Попадание в 15 крупных плейлистов", "Сделка с крупной электронной компанией"],
       beforeFollowers: "5.8K",
       afterFollowers: "284.6K",
-      beforeLikes: "890 avg",
-      afterLikes: "32.4K avg",
-      duration: "4 months",
+      beforeLikes: "890 средний",
+      afterLikes: "32.4K средний",
+      duration: "4 месяца",
       platforms: ["Spotify", "Instagram", "TikTok"]
     },
     {
-      name: "LUNA BEATS",
-      genre: "Lo-Fi Hip Hop",
-      story: "Built LUNA BEATS from bedroom producer to streaming sensation",
-      metrics: ["↑ 950% Spotify streams", "2M+ TikTok video views", "Collaboration with major artists"],
+      name: "ЛУНА БИТЫ",
+      genre: "Лоу-фай хип-хоп",
+      story: "Превратили ЛУНА БИТЫ из домашнего продюсера в стриминговую сенсацию",
+      metrics: ["↑ 950% прослушиваний Spotify", "2М+ просмотров видео TikTok", "Коллаборации с крупными артистами"],
       beforeFollowers: "3.2K",
       afterFollowers: "197.5K",
-      beforeLikes: "450 avg",
-      afterLikes: "28.9K avg",
-      duration: "6 months",
+      beforeLikes: "450 средний",
+      afterLikes: "28.9K средний",
+      duration: "6 месяцев",
       platforms: ["Spotify", "TikTok", "Instagram"]
     }
   ];
 
   const services = [
     {
-      title: "Social Media Growth",
-      description: "Strategic content and audience building",
+      title: "Рост в соцсетях",
+      description: "Стратегический контент и развитие аудитории",
       icon: "TrendingUp"
     },
     {
-      title: "Content Strategy",
-      description: "Viral content creation and planning",
+      title: "Контент-стратегия",
+      description: "Создание вирусного контента и планирование",
       icon: "Zap"
     },
     {
-      title: "Playlist Promotion",
-      description: "Editorial and curator connections",
+      title: "Продвижение в плейлистах",
+      description: "Связи с редакторами и кураторами",
       icon: "Music"
     },
     {
-      title: "Brand Partnerships",
-      description: "Monetization and collaboration opportunities",
+      title: "Бренд-партнерства",
+      description: "Монетизация и возможности коллабораций",
       icon: "Handshake"
     }
   ];
@@ -100,17 +100,17 @@ const Index = () => {
         
         <div className={`text-center max-w-4xl mx-auto px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
-            <span className="gradient-text">From Hidden Talent</span>
+            <span className="gradient-text">От скрытого таланта</span>
             <br />
-            <span className="text-foreground">to Headline Acts</span>
+            <span className="text-foreground">к хедлайнерам</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We help musicians grow their audience and visibility across TikTok, Instagram, and Spotify
+            Мы помогаем музыкантам увеличить аудиторию и популярность в TikTok, Instagram и Spotify
           </p>
           
           <Button size="lg" className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
-            Get Discovered
+            Стать популярным
             <Icon name="ArrowRight" className="ml-2" size={20} />
           </Button>
           
@@ -135,8 +135,8 @@ const Index = () => {
       <section className="py-20 bg-card/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Success Stories</h2>
-            <p className="text-xl text-muted-foreground">Real artists, real results, real growth</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Истории успеха</h2>
+            <p className="text-xl text-muted-foreground">Реальные артисты, реальные результаты, реальный рост</p>
           </div>
 
           {/* Carousel */}
@@ -179,7 +179,7 @@ const Index = () => {
                     <div className="bg-muted/20 rounded-lg p-4">
                       <div className="flex items-center gap-2 mb-2">
                         <Icon name="Clock" className="text-accent" size={16} />
-                        <span className="text-sm text-muted-foreground">Campaign Duration</span>
+                        <span className="text-sm text-muted-foreground">Длительность кампании</span>
                       </div>
                       <div className="w-full bg-muted/50 rounded-full h-2">
                         <div className="bg-primary h-2 rounded-full w-full"></div>
@@ -193,7 +193,7 @@ const Index = () => {
                     <div className="grid grid-cols-2 gap-6">
                       {/* Before */}
                       <div className="space-y-3">
-                        <h4 className="text-center font-semibold text-destructive">Before</h4>
+                        <h4 className="text-center font-semibold text-destructive">До</h4>
                         <div className="bg-muted/20 rounded-2xl p-4 border border-muted/50">
                           <div className="bg-background rounded-xl p-4 space-y-2">
                             <div className="flex items-center gap-2 mb-3">
@@ -201,16 +201,16 @@ const Index = () => {
                               <div className="text-sm font-medium">{currentArtist.name.toLowerCase()}</div>
                             </div>
                             <div className="text-lg font-bold">{currentArtist.beforeFollowers}</div>
-                            <div className="text-xs text-muted-foreground">followers</div>
+                            <div className="text-xs text-muted-foreground">подписчиков</div>
                             <div className="text-sm">{currentArtist.beforeLikes}</div>
-                            <div className="text-xs text-muted-foreground">avg likes</div>
+                            <div className="text-xs text-muted-foreground">сред. лайки</div>
                           </div>
                         </div>
                       </div>
 
                       {/* After */}
                       <div className="space-y-3">
-                        <h4 className="text-center font-semibold text-primary">After</h4>
+                        <h4 className="text-center font-semibold text-primary">После</h4>
                         <div className="bg-primary/10 rounded-2xl p-4 border border-primary/30">
                           <div className="bg-background rounded-xl p-4 space-y-2">
                             <div className="flex items-center gap-2 mb-3">
@@ -219,9 +219,9 @@ const Index = () => {
                               <Icon name="BadgeCheck" className="text-primary" size={16} />
                             </div>
                             <div className="text-lg font-bold text-primary">{currentArtist.afterFollowers}</div>
-                            <div className="text-xs text-muted-foreground">followers</div>
+                            <div className="text-xs text-muted-foreground">подписчиков</div>
                             <div className="text-sm text-primary">{currentArtist.afterLikes}</div>
-                            <div className="text-xs text-muted-foreground">avg likes</div>
+                            <div className="text-xs text-muted-foreground">сред. лайки</div>
                           </div>
                         </div>
                       </div>
@@ -229,7 +229,7 @@ const Index = () => {
 
                     <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
                       <Icon name="ExternalLink" className="mr-2" size={16} />
-                      View Full Case Study
+                      Смотреть полный кейс
                     </Button>
                   </div>
                 </div>
@@ -266,8 +266,8 @@ const Index = () => {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-            <p className="text-xl text-muted-foreground">Everything you need to grow your music career</p>
+            <h2 className="text-4xl font-bold mb-4">Наши услуги</h2>
+            <p className="text-xl text-muted-foreground">Все необходимое для развития музыкальной карьеры</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -291,7 +291,7 @@ const Index = () => {
       {/* Trust Indicators */}
       <section className="py-16 bg-card/30">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-2xl font-semibold mb-8">Trusted by artists on all major platforms</h3>
+          <h3 className="text-2xl font-semibold mb-8">Нам доверяют артисты на всех крупных платформах</h3>
           <div className="flex justify-center items-center gap-12 opacity-60">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-[#1DB954] rounded-full"></div>
@@ -313,8 +313,8 @@ const Index = () => {
       <section className="py-20">
         <div className="max-w-2xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Ready to grow? Let's talk.</h2>
-            <p className="text-xl text-muted-foreground">Tell us about your music and let's create your success story</p>
+            <h2 className="text-4xl font-bold mb-4">Готовы к росту? Давайте поговорим.</h2>
+            <p className="text-xl text-muted-foreground">Расскажите нам о своей музыке и давайте создадим вашу историю успеха</p>
           </div>
 
           <Card className="bg-card/50 border-border/50">
@@ -322,31 +322,31 @@ const Index = () => {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Name</label>
-                    <Input placeholder="Your artist name" className="bg-background/50 border-border/50" />
+                    <label className="text-sm font-medium mb-2 block">Имя</label>
+                    <Input placeholder="Ваше творческое имя" className="bg-background/50 border-border/50" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Genre</label>
-                    <Input placeholder="Your music genre" className="bg-background/50 border-border/50" />
+                    <label className="text-sm font-medium mb-2 block">Жанр</label>
+                    <Input placeholder="Ваш музыкальный жанр" className="bg-background/50 border-border/50" />
                   </div>
                 </div>
                 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Social Link</label>
-                  <Input placeholder="Instagram, TikTok, or Spotify link" className="bg-background/50 border-border/50" />
+                  <label className="text-sm font-medium mb-2 block">Ссылка на соцсети</label>
+                  <Input placeholder="Ссылка на Instagram, TikTok или Spotify" className="bg-background/50 border-border/50" />
                 </div>
                 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Message</label>
+                  <label className="text-sm font-medium mb-2 block">Сообщение</label>
                   <Textarea 
-                    placeholder="Tell us about your goals and current following..."
+                    placeholder="Расскажите о ваших целях и текущей аудитории..."
                     rows={4}
                     className="bg-background/50 border-border/50"
                   />
                 </div>
                 
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3">
-                  Get Started
+                  Начать сотрудничество
                   <Icon name="Send" className="ml-2" size={16} />
                 </Button>
               </form>
