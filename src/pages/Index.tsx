@@ -93,7 +93,7 @@ const Index = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Мы помогаем музыкантам увеличить аудиторию и популярность в TikTok, Instagram и Spotify
+            Мы помогаем музыкантам увеличить аудиторию и популярность в TikTok, Instagram, YouTube, ВК и Яндекс Музыке
           </p>
           
           <Button size="lg" className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
