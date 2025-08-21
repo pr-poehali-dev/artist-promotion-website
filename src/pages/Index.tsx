@@ -37,14 +37,16 @@ const Index = () => {
       image: "https://cdn.poehali.dev/files/a305af05-ec8b-4f4c-a9b6-fa88a015b308.jpg"
     },
     {
-      name: "ЛУНА БИТЫ",
-      genre: "Лоу-фай хип-хоп",
-      description: "Талантливый битмейкер, создающий расслабляющие лоу-фай биты для учебы и работы. Начинал как домашний продюсер с минимальным оборудованием.",
-      work: "Помогли оформить узнаваемый визуальный стиль, создали серию лоу-фай плейлистов и организовали размещение треков в популярных study-каналах. Настроили автоматическое продвижение через алгоритмы Spotify.",
-      achievements: ["200K+ прослушиваний в месяц", "Коллаборации с лейблами", "Постоянный доход от стримингов"],
+      name: "АНДРЕЙ КУКЛИН",
+      genre: "Музыкант",
+      work: "Сделали самым медийным слепым музыкантом в России. Научили продвигать музыку через вертикальный контент.",
+      achievements: ["370К+ просмотров", "45К в Instagram", "330К+ слушателей"],
       duration: "6 месяцев",
-      platforms: ["Spotify", "TikTok", "Instagram"],
-      image: "img/7af74448-01c6-4728-ad1f-68dbdd6ef41c.jpg"
+      platforms: [
+        { name: "ЯМ", url: "https://music.yandex.ru/artist/10817574" },
+        { name: "Instagram", url: "https://www.instagram.com/andrey_kuklin__?igsh=MXB1Y2phZzYxZjFmYw==" }
+      ],
+      image: "https://cdn.poehali.dev/files/d37ad79a-c467-4998-8677-4fda38748a1e.jpg"
     }
   ];
 
