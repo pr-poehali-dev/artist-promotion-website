@@ -25,14 +25,13 @@ const Index = () => {
       image: "img/2308deda-68a1-4fb4-8bde-9ac7cd017234.jpg"
     },
     {
-      name: "НЕОН ВОЛНЫ",
+      name: "NETOXIC",
       genre: "Синтвейв",
-      description: "Продюсер из Москвы, создающий атмосферную синтвейв музыку в стиле 80-х. Его треки переносят слушателей в мир неоновых городов и ретро-футуризма.",
-      work: "Создали уникальную визуальную концепцию, разработали серию ретро-клипов и настроили продвижение через специализированные синтвейв сообщества. Организовали коллаборации с популярными каналами YouTube.",
-      achievements: ["280K+ месячных слушателей", "15 крупных плейлистов", "Сделка с лейблом"],
+      work: "Создали уникальную визуальную концепцию, разработали серию роликов и помогли продвинуть трек через соц-сети.",
+      achievements: ["300К+ просмотров", "70К в Instagram", "10000+ слушателей"],
       duration: "4 месяца",
       platforms: ["Spotify", "Instagram", "TikTok"],
-      image: "img/53f12ed6-6bf8-4c73-8af5-74aa8a33e94b.jpg"
+      image: "https://cdn.poehali.dev/files/a305af05-ec8b-4f4c-a9b6-fa88a015b308.jpg"
     },
     {
       name: "ЛУНА БИТЫ",
@@ -135,10 +134,12 @@ const Index = () => {
                     </div>
                     
                     <div className="space-y-4 mb-6">
-                      <div>
-                        <h4 className="font-semibold mb-2 text-primary">О Артисте</h4>
-                        <p className="text-muted-foreground">{artist.description}</p>
-                      </div>
+                      {artist.description && (
+                        <div>
+                          <h4 className="font-semibold mb-2 text-primary">О Артисте</h4>
+                          <p className="text-muted-foreground">{artist.description}</p>
+                        </div>
+                      )}
                       
                       <div>
                         <h4 className="font-semibold mb-2 text-primary">Наша Работа</h4>
