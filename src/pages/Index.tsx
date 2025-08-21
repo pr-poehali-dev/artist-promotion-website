@@ -277,26 +277,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Trust Indicators */}
-      <section className="py-16 bg-card/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-8 px-2">Нам доверяют артисты на всех крупных платформах</h3>
-          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12 opacity-60">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-[#1DB954] rounded-full"></div>
-              <span className="font-medium">Spotify</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
-              <span className="font-medium">Instagram</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-black rounded-full"></div>
-              <span className="font-medium">TikTok</span>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Contact Section */}
       <section className="py-20">
@@ -319,6 +300,18 @@ const Index = () => {
               </Button>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Motivational Call to Action */}
+      <section className="py-16 bg-gradient-to-r from-primary/20 to-accent/20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-primary">
+            И хватит уже сидеть, поднимаем попки и за работу! 🚀
+          </h3>
+          <p className="text-lg text-muted-foreground">
+            Твоя музыка не будет продвигать себя сама
+          </p>
         </div>
       </section>
     </div>
