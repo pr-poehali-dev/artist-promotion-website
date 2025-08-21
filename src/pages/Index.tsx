@@ -24,7 +24,7 @@ const Index = () => {
         { name: "YouTube", url: "https://www.youtube.com/@avanturisttt" },
         { name: "Instagram", url: "https://www.instagram.com/avan.turistt?igsh=ZG56d2M2M3ByOGNw" }
       ],
-      image: "https://cdn.poehali.dev/files/7136406a-7c78-482a-8eca-49d3df9e9426.jpg"
+      image: "https://cdn.poehali.dev/files/2bd7684e-5ece-4e8d-b7c8-9cf964090753.jpg"
     },
     {
       name: "NETOXIC",
