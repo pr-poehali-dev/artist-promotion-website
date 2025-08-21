@@ -52,18 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Music agency specific colors
-				spotify: {
-					green: 'hsl(var(--spotify-green))',
-					DEFAULT: 'hsl(var(--spotify-green))'
+				// Blue palette specific colors
+				sky: {
+					blue: 'hsl(var(--sky-blue))',
+					DEFAULT: 'hsl(var(--sky-blue))'
 				},
-				electric: {
-					blue: 'hsl(var(--electric-blue))',
-					DEFAULT: 'hsl(var(--electric-blue))'
+				ocean: {
+					blue: 'hsl(var(--ocean-blue))',
+					DEFAULT: 'hsl(var(--ocean-blue))'
 				},
-				neon: {
-					purple: 'hsl(var(--neon-purple))',
-					DEFAULT: 'hsl(var(--neon-purple))'
+				deep: {
+					purple: 'hsl(var(--deep-purple))',
+					DEFAULT: 'hsl(var(--deep-purple))'
 				},
 				dark: {
 					bg: 'hsl(var(--dark-bg))',
