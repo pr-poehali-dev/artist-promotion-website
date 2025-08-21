@@ -100,27 +100,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold gradient-text">БЮРО17</div>
-            <a
-              href="https://t.me/avan_muzprod_bot"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline" size="sm" className="bg-primary/10 border-primary/20 hover:bg-primary/20">
-                Связаться
-                <Icon name="MessageCircle" className="ml-2" size={16} />
-              </Button>
-            </a>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
         {/* Animated Background */}
         <div className="absolute inset-0 sound-wave opacity-10 animate-gradient"></div>
         
