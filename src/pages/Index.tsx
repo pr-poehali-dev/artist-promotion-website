@@ -26,11 +26,14 @@ const Index = () => {
     },
     {
       name: "NETOXIC",
-      genre: "Синтвейв",
+      genre: "Музыкант",
       work: "Создали уникальную визуальную концепцию, разработали серию роликов и помогли продвинуть трек через соц-сети.",
       achievements: ["300К+ просмотров", "70К в Instagram", "10000+ слушателей"],
       duration: "4 месяца",
-      platforms: ["Spotify", "Instagram", "TikTok"],
+      platforms: [
+        { name: "ЯМ", url: "https://music.yandex.ru/artist/12356096?utm_medium=copy_link&ref_id=f0cb5a16-eda4-49f4-a18b-86de6b3acdd4" },
+        { name: "Instagram", url: "https://www.instagram.com/natasha_milnichenko?igsh=MWZ5MXBxZWJ4OXM5Ng==" }
+      ],
       image: "https://cdn.poehali.dev/files/a305af05-ec8b-4f4c-a9b6-fa88a015b308.jpg"
     },
     {
@@ -160,9 +163,23 @@ const Index = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex gap-2">
                         {artist.platforms.map((platform, idx) => (
-                          <Badge key={idx} variant="outline" className="border-primary/30 text-xs">
-                            {platform}
-                          </Badge>
+                          typeof platform === 'string' ? (
+                            <Badge key={idx} variant="outline" className="border-primary/30 text-xs">
+                              {platform}
+                            </Badge>
+                          ) : (
+                            <a
+                              key={idx}
+                              href={platform.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block"
+                            >
+                              <Badge variant="outline" className="border-primary/30 text-xs hover:bg-primary/10 transition-colors cursor-pointer">
+                                {platform.name}
+                              </Badge>
+                            </a>
+                          )
                         ))}
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
