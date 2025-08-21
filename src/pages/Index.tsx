@@ -49,6 +49,15 @@ const Index = () => {
         { name: "Instagram", url: "https://www.instagram.com/andrey_kuklin__?igsh=MXB1Y2phZzYxZjFmYw==" }
       ],
       image: "https://cdn.poehali.dev/files/d37ad79a-c467-4998-8677-4fda38748a1e.jpg"
+    },
+    {
+      name: "МотоТрейд",
+      genre: "Компания",
+      work: "Работаем не только с артистами, но и с бизнесом. Помогли найти свой формат роликов, благодаря чему увеличили узнаваемость компании.",
+      achievements: ["3М+ просмотров", "14К+ YouTube"],
+      duration: "3 месяца",
+      platforms: ["YouTube", "Instagram"],
+      image: "img/9c9ff6ff-7355-4efc-ab7e-f34c4fb91cc5.jpg"
     }
   ];
 
