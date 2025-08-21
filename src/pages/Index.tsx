@@ -121,10 +121,17 @@ const Index = () => {
             Мы помогаем музыкантам увеличить аудиторию и популярность в TikTok, Instagram, YouTube, ВК и Яндекс Музыке
           </p>
           
-          <Button size="lg" className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
-            Стать популярным
-            <Icon name="ArrowRight" className="ml-2" size={20} />
-          </Button>
+          <a
+            href="https://t.me/avan_muzprod_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button size="lg" className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
+              Стать популярным
+              <Icon name="ArrowRight" className="ml-2" size={20} />
+            </Button>
+          </a>
           
           {/* Sound Wave Visualization */}
           <div className="mt-16 flex items-center justify-center space-x-1">
