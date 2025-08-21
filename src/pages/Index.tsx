@@ -180,32 +180,26 @@ const Index = () => {
                       ))}
                     </div>
                     
-                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                      <div className="flex gap-2 flex-wrap">
-                        {artist.platforms.map((platform, idx) => (
-                          typeof platform === 'string' ? (
-                            <Badge key={idx} variant="outline" className="border-primary/30 text-xs">
-                              {platform}
+                    <div className="flex gap-2 flex-wrap">
+                      {artist.platforms.map((platform, idx) => (
+                        typeof platform === 'string' ? (
+                          <Badge key={idx} variant="outline" className="border-primary/30 text-xs">
+                            {platform}
+                          </Badge>
+                        ) : (
+                          <a
+                            key={idx}
+                            href={platform.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block"
+                          >
+                            <Badge variant="outline" className="border-primary/30 text-xs hover:bg-primary/10 transition-colors cursor-pointer">
+                              {platform.name}
                             </Badge>
-                          ) : (
-                            <a
-                              key={idx}
-                              href={platform.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-block"
-                            >
-                              <Badge variant="outline" className="border-primary/30 text-xs hover:bg-primary/10 transition-colors cursor-pointer">
-                                {platform.name}
-                              </Badge>
-                            </a>
-                          )
-                        ))}
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Icon name="Clock" size={14} />
-                        <span>{artist.duration}</span>
-                      </div>
+                          </a>
+                        )
+                      ))}
                     </div>
                   </div>
                   
