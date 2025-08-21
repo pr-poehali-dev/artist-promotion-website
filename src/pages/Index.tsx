@@ -7,7 +7,6 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -18,38 +17,32 @@ const Index = () => {
     {
       name: "АРИНА",
       genre: "Электронный поп",
-      story: "Мы помогли АРИНЕ вырасти с 10K до 500K подписчиков в Instagram за 5 месяцев",
-      metrics: ["↑ 800% вовлеченности", "3 вирусных видео в TikTok (10М+ просмотров)", "Попадание в редакционные плейлисты Spotify"],
-      beforeFollowers: "10.2K",
-      afterFollowers: "502.8K",
-      beforeLikes: "2.1K средний",
-      afterLikes: "45.7K средний",
+      description: "Молодая артистка из Санкт-Петербурга с уникальным звучанием, сочетающим электронную музыку с поп-мелодиями. Начинала как независимый исполнитель с небольшой аудиторией.",
+      work: "Мы разработали комплексную стратегию продвижения, включающую создание вирусного контента для TikTok, профессиональную съемку клипов и настройку таргетированной рекламы. Результат — взрывной рост аудитории и попадание в топ-плейлисты Spotify.",
+      achievements: ["500K+ подписчиков в Instagram", "3 вирусных видео в TikTok", "Попадание в редакционные плейлисты Spotify"],
       duration: "5 месяцев",
-      platforms: ["TikTok", "Instagram", "Spotify"]
+      platforms: ["TikTok", "Instagram", "Spotify"],
+      image: "img/2308deda-68a1-4fb4-8bde-9ac7cd017234.jpg"
     },
     {
       name: "НЕОН ВОЛНЫ",
       genre: "Синтвейв",
-      story: "Превратили НЕОН ВОЛНЫ в вирусную сенсацию на всех платформах",
-      metrics: ["↑ 1200% месячных слушателей", "Попадание в 15 крупных плейлистов", "Сделка с крупной электронной компанией"],
-      beforeFollowers: "5.8K",
-      afterFollowers: "284.6K",
-      beforeLikes: "890 средний",
-      afterLikes: "32.4K средний",
+      description: "Продюсер из Москвы, создающий атмосферную синтвейв музыку в стиле 80-х. Его треки переносят слушателей в мир неоновых городов и ретро-футуризма.",
+      work: "Создали уникальную визуальную концепцию, разработали серию ретро-клипов и настроили продвижение через специализированные синтвейв сообщества. Организовали коллаборации с популярными каналами YouTube.",
+      achievements: ["280K+ месячных слушателей", "15 крупных плейлистов", "Сделка с лейблом"],
       duration: "4 месяца",
-      platforms: ["Spotify", "Instagram", "TikTok"]
+      platforms: ["Spotify", "Instagram", "TikTok"],
+      image: "img/53f12ed6-6bf8-4c73-8af5-74aa8a33e94b.jpg"
     },
     {
       name: "ЛУНА БИТЫ",
       genre: "Лоу-фай хип-хоп",
-      story: "Превратили ЛУНА БИТЫ из домашнего продюсера в стриминговую сенсацию",
-      metrics: ["↑ 950% прослушиваний Spotify", "2М+ просмотров видео TikTok", "Коллаборации с крупными артистами"],
-      beforeFollowers: "3.2K",
-      afterFollowers: "197.5K",
-      beforeLikes: "450 средний",
-      afterLikes: "28.9K средний",
+      description: "Талантливый битмейкер, создающий расслабляющие лоу-фай биты для учебы и работы. Начинал как домашний продюсер с минимальным оборудованием.",
+      work: "Помогли оформить узнаваемый визуальный стиль, создали серию лоу-фай плейлистов и организовали размещение треков в популярных study-каналах. Настроили автоматическое продвижение через алгоритмы Spotify.",
+      achievements: ["200K+ прослушиваний в месяц", "Коллаборации с лейблами", "Постоянный доход от стримингов"],
       duration: "6 месяцев",
-      platforms: ["Spotify", "TikTok", "Instagram"]
+      platforms: ["Spotify", "TikTok", "Instagram"],
+      image: "img/7af74448-01c6-4728-ad1f-68dbdd6ef41c.jpg"
     }
   ];
 
@@ -75,16 +68,6 @@ const Index = () => {
       icon: "Handshake"
     }
   ];
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % artists.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + artists.length) % artists.length);
-  };
-
-  const currentArtist = artists[currentSlide];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -131,133 +114,82 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Artist Case Study Carousel */}
+      {/* Artist Case Studies */}
       <section className="py-20 bg-card/50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Истории успеха</h2>
             <p className="text-xl text-muted-foreground">Реальные артисты, реальные результаты, реальный рост</p>
           </div>
-
-          {/* Carousel */}
-          <div className="relative">
-            <Card className="bg-card border-border/50 backdrop-blur-sm">
-              <CardContent className="p-8 md:p-12">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  {/* Artist Info */}
-                  <div className="space-y-6">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-3xl font-bold">{currentArtist.name}</h3>
-                        <Badge variant="secondary" className="bg-secondary/20 text-secondary">
-                          {currentArtist.genre}
-                        </Badge>
-                      </div>
-                      <p className="text-lg text-muted-foreground">{currentArtist.story}</p>
+          
+          <div className="space-y-12">
+            {artists.map((artist, index) => (
+              <Card key={index} className="bg-card/50 backdrop-blur-sm border border-border/50 overflow-hidden">
+                <div className={`grid md:grid-cols-2 gap-8 p-8 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+                  <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
+                    <div className="flex items-center gap-3 mb-4">
+                      <h3 className="text-2xl font-bold">{artist.name}</h3>
+                      <Badge variant="secondary" className="bg-primary/20 text-primary border-0">
+                        {artist.genre}
+                      </Badge>
                     </div>
-
-                    {/* Metrics */}
-                    <div className="space-y-3">
-                      {currentArtist.metrics.map((metric, index) => (
-                        <div key={index} className="flex items-center gap-2">
-                          <Icon name="TrendingUp" className="text-primary" size={16} />
-                          <span className="text-foreground">{metric}</span>
+                    
+                    <div className="space-y-4 mb-6">
+                      <div>
+                        <h4 className="font-semibold mb-2 text-primary">О Артисте</h4>
+                        <p className="text-muted-foreground">{artist.description}</p>
+                      </div>
+                      
+                      <div>
+                        <h4 className="font-semibold mb-2 text-primary">Наша Работа</h4>
+                        <p className="text-muted-foreground">{artist.work}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3 mb-6">
+                      <h4 className="font-semibold text-primary">Достижения</h4>
+                      {artist.achievements.map((achievement, idx) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <Icon name="Check" className="text-primary" size={16} />
+                          <span className="text-sm">{achievement}</span>
                         </div>
                       ))}
                     </div>
-
-                    {/* Platform Badges */}
-                    <div className="flex gap-3">
-                      {currentArtist.platforms.map((platform) => (
-                        <Badge key={platform} variant="outline" className="border-primary/50 text-primary">
-                          {platform}
-                        </Badge>
-                      ))}
-                    </div>
-
-                    {/* Timeline */}
-                    <div className="bg-muted/20 rounded-lg p-4">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Icon name="Clock" className="text-accent" size={16} />
-                        <span className="text-sm text-muted-foreground">Длительность кампании</span>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="flex gap-2">
+                        {artist.platforms.map((platform, idx) => (
+                          <Badge key={idx} variant="outline" className="border-primary/30 text-xs">
+                            {platform}
+                          </Badge>
+                        ))}
                       </div>
-                      <div className="w-full bg-muted/50 rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full w-full"></div>
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <Icon name="Clock" size={14} />
+                        <span>{artist.duration}</span>
                       </div>
-                      <p className="text-right text-sm mt-1 text-primary font-medium">{currentArtist.duration}</p>
                     </div>
                   </div>
-
-                  {/* Before/After Screenshots */}
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-6">
-                      {/* Before */}
-                      <div className="space-y-3">
-                        <h4 className="text-center font-semibold text-destructive">До</h4>
-                        <div className="bg-muted/20 rounded-2xl p-4 border border-muted/50">
-                          <div className="bg-background rounded-xl p-4 space-y-2">
-                            <div className="flex items-center gap-2 mb-3">
-                              <div className="w-8 h-8 bg-muted rounded-full"></div>
-                              <div className="text-sm font-medium">{currentArtist.name.toLowerCase()}</div>
-                            </div>
-                            <div className="text-lg font-bold">{currentArtist.beforeFollowers}</div>
-                            <div className="text-xs text-muted-foreground">подписчиков</div>
-                            <div className="text-sm">{currentArtist.beforeLikes}</div>
-                            <div className="text-xs text-muted-foreground">сред. лайки</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* After */}
-                      <div className="space-y-3">
-                        <h4 className="text-center font-semibold text-primary">После</h4>
-                        <div className="bg-primary/10 rounded-2xl p-4 border border-primary/30">
-                          <div className="bg-background rounded-xl p-4 space-y-2">
-                            <div className="flex items-center gap-2 mb-3">
-                              <div className="w-8 h-8 bg-primary rounded-full"></div>
-                              <div className="text-sm font-medium">{currentArtist.name.toLowerCase()}</div>
-                              <Icon name="BadgeCheck" className="text-primary" size={16} />
-                            </div>
-                            <div className="text-lg font-bold text-primary">{currentArtist.afterFollowers}</div>
-                            <div className="text-xs text-muted-foreground">подписчиков</div>
-                            <div className="text-sm text-primary">{currentArtist.afterLikes}</div>
-                            <div className="text-xs text-muted-foreground">сред. лайки</div>
-                          </div>
+                  
+                  <div className={`${index % 2 === 1 ? 'md:order-1' : ''}`}>
+                    <div className="relative aspect-square rounded-lg overflow-hidden">
+                      <img 
+                        src={artist.image} 
+                        alt={artist.name}
+                        className="w-full h-full object-cover transition-transform hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <div className="text-white">
+                          <div className="text-sm opacity-90">{artist.genre}</div>
+                          <div className="font-bold text-lg">{artist.name}</div>
                         </div>
                       </div>
                     </div>
-
-                    <Button variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10">
-                      <Icon name="ExternalLink" className="mr-2" size={16} />
-                      Смотреть полный кейс
-                    </Button>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* Navigation */}
-            <div className="flex justify-center gap-4 mt-8">
-              <Button variant="outline" size="icon" onClick={prevSlide} className="border-primary/50 hover:bg-primary/10">
-                <Icon name="ChevronLeft" size={20} />
-              </Button>
-              
-              <div className="flex items-center gap-2">
-                {artists.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`w-3 h-3 rounded-full transition-all ${
-                      index === currentSlide ? 'bg-primary' : 'bg-muted'
-                    }`}
-                    onClick={() => setCurrentSlide(index)}
-                  />
-                ))}
-              </div>
-              
-              <Button variant="outline" size="icon" onClick={nextSlide} className="border-primary/50 hover:bg-primary/10">
-                <Icon name="ChevronRight" size={20} />
-              </Button>
-            </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
