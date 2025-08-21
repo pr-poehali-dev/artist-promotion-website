@@ -15,14 +15,16 @@ const Index = () => {
 
   const artists = [
     {
-      name: "АРИНА",
-      genre: "Электронный поп",
-      description: "Молодая артистка из Санкт-Петербурга с уникальным звучанием, сочетающим электронную музыку с поп-мелодиями. Начинала как независимый исполнитель с небольшой аудиторией.",
-      work: "Мы разработали комплексную стратегию продвижения, включающую создание вирусного контента для TikTok, профессиональную съемку клипов и настройку таргетированной рекламы. Результат — взрывной рост аудитории и попадание в топ-плейлисты Spotify.",
-      achievements: ["500K+ подписчиков в Instagram", "3 вирусных видео в TikTok", "Попадание в редакционные плейлисты Spotify"],
+      name: "АВАНТЮРИСТ",
+      genre: "продюсер/музыкант/блогер",
+      description: "Самое сложное в любой работе - СДЕЛАТЬ ДЛЯ СЕБЯ. Кейс «АВАНТЮРИСТА» показывает насколько далеко можно зайти, имея желание и нужные знания",
+      achievements: ["2,44М YouTube", "2,4М TikTok", "5М+ прослушиваний"],
       duration: "5 месяцев",
-      platforms: ["TikTok", "Instagram", "Spotify"],
-      image: "img/2308deda-68a1-4fb4-8bde-9ac7cd017234.jpg"
+      platforms: [
+        { name: "YouTube", url: "https://www.youtube.com/@avanturisttt" },
+        { name: "Instagram", url: "https://www.instagram.com/avan.turistt?igsh=ZG56d2M2M3ByOGNw" }
+      ],
+      image: "https://cdn.poehali.dev/files/7136406a-7c78-482a-8eca-49d3df9e9426.jpg"
     },
     {
       name: "NETOXIC",
@@ -141,15 +143,19 @@ const Index = () => {
                     <div className="space-y-4 mb-6">
                       {artist.description && (
                         <div>
-                          <h4 className="font-semibold mb-2 text-primary">О Артисте</h4>
+                          <h4 className="font-semibold mb-2 text-primary">
+                            {artist.name === "АВАНТЮРИСТ" ? "Обо Мне" : "О Артисте"}
+                          </h4>
                           <p className="text-muted-foreground">{artist.description}</p>
                         </div>
                       )}
                       
-                      <div>
-                        <h4 className="font-semibold mb-2 text-primary">Наша Работа</h4>
-                        <p className="text-muted-foreground">{artist.work}</p>
-                      </div>
+                      {artist.work && artist.name !== "АВАНТЮРИСТ" && (
+                        <div>
+                          <h4 className="font-semibold mb-2 text-primary">Наша Работа</h4>
+                          <p className="text-muted-foreground">{artist.work}</p>
+                        </div>
+                      )}
                     </div>
                     
                     <div className="space-y-3 mb-6">
