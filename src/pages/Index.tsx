@@ -306,41 +306,19 @@ const Index = () => {
             <p className="text-lg sm:text-xl text-muted-foreground px-2">Расскажите нам о своей музыке и давайте создадим вашу историю успеха</p>
           </div>
 
-          <Card className="bg-card/50 border-border/50">
-            <CardContent className="p-4 sm:p-6 md:p-8">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">Имя</label>
-                    <Input placeholder="Ваше творческое имя" className="bg-background/50 border-border/50" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium mb-2 block">Жанр</label>
-                    <Input placeholder="Ваш музыкальный жанр" className="bg-background/50 border-border/50" />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Ссылка на соцсети</label>
-                  <Input placeholder="Ссылка на Instagram, TikTok или Spotify" className="bg-background/50 border-border/50" />
-                </div>
-                
-                <div>
-                  <label className="text-sm font-medium mb-2 block">Сообщение</label>
-                  <Textarea 
-                    placeholder="Расскажите о ваших целях и текущей аудитории..."
-                    rows={4}
-                    className="bg-background/50 border-border/50"
-                  />
-                </div>
-                
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3">
-                  Начать сотрудничество
-                  <Icon name="Send" className="ml-2" size={16} />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          <div className="text-center">
+            <a
+              href="https://web.telegram.org/a/#7072952092"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-8">
+                Начать сотрудничество
+                <Icon name="Send" className="ml-2" size={16} />
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
     </div>
