@@ -83,6 +83,11 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Open Sans", system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 
   h1,

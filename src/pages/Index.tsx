@@ -74,9 +74,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
         {/* Animated Background */}
         <div className="absolute inset-0 sound-wave opacity-10 animate-gradient"></div>
         
@@ -85,14 +85,14 @@ const Index = () => {
         <div className="absolute top-40 right-20 w-6 h-6 bg-secondary rounded-full animate-float opacity-40" style={{animationDelay: '2s'}}></div>
         <div className="absolute bottom-40 left-20 w-5 h-5 bg-accent rounded-full animate-float opacity-50" style={{animationDelay: '4s'}}></div>
         
-        <div className={`text-center max-w-4xl mx-auto px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-6xl md:text-8xl font-bold mb-6">
+        <div className={`text-center max-w-4xl mx-auto px-4 sm:px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 leading-tight">
             <span className="gradient-text">От скрытого таланта</span>
             <br />
             <span className="text-foreground">к хедлайнерам</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto px-2">
             Мы помогаем музыкантам увеличить аудиторию и популярность в TikTok, Instagram, YouTube, ВК и Яндекс Музыке
           </p>
           
@@ -119,20 +119,20 @@ const Index = () => {
       </section>
 
       {/* Artist Case Studies */}
-      <section className="py-20 bg-card/50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-16 sm:py-20 bg-card/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Истории успеха</h2>
-            <p className="text-xl text-muted-foreground">Реальные артисты, реальные результаты, реальный рост</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Истории успеха</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground px-2">Реальные артисты, реальные результаты, реальный рост</p>
           </div>
           
           <div className="space-y-12">
             {artists.map((artist, index) => (
               <Card key={index} className="bg-card/50 backdrop-blur-sm border border-border/50 overflow-hidden">
-                <div className={`grid md:grid-cols-2 gap-8 p-8 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+                <div className={`grid md:grid-cols-2 gap-6 sm:gap-8 p-4 sm:p-6 md:p-8 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                   <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                    <div className="flex items-center gap-3 mb-4">
-                      <h3 className="text-2xl font-bold">{artist.name}</h3>
+                    <div className="flex items-center gap-3 mb-4 flex-wrap">
+                      <h3 className="text-xl sm:text-2xl font-bold">{artist.name}</h3>
                       <Badge variant="secondary" className="bg-primary/20 text-primary border-0">
                         {artist.genre}
                       </Badge>
@@ -162,8 +162,8 @@ const Index = () => {
                       ))}
                     </div>
                     
-                    <div className="flex items-center justify-between">
-                      <div className="flex gap-2">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                      <div className="flex gap-2 flex-wrap">
                         {artist.platforms.map((platform, idx) => (
                           typeof platform === 'string' ? (
                             <Badge key={idx} variant="outline" className="border-primary/30 text-xs">
@@ -192,7 +192,7 @@ const Index = () => {
                   </div>
                   
                   <div className={`${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                    <div className="relative aspect-square rounded-lg overflow-hidden">
+                    <div className="relative aspect-square rounded-lg overflow-hidden max-h-80 sm:max-h-none">
                       <img 
                         src={artist.image} 
                         alt={artist.name}
@@ -216,13 +216,13 @@ const Index = () => {
 
       {/* Services Section */}
       <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Наши услуги</h2>
-            <p className="text-xl text-muted-foreground">Все необходимое для развития музыкальной карьеры</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Наши услуги</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground px-2">Все необходимое для развития музыкальной карьеры</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {services.map((service, index) => (
               <Card key={index} className="bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
                 <CardContent className="p-6 text-center">
@@ -242,9 +242,9 @@ const Index = () => {
 
       {/* Trust Indicators */}
       <section className="py-16 bg-card/30">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-2xl font-semibold mb-8">Нам доверяют артисты на всех крупных платформах</h3>
-          <div className="flex justify-center items-center gap-12 opacity-60">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-8 px-2">Нам доверяют артисты на всех крупных платформах</h3>
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12 opacity-60">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-[#1DB954] rounded-full"></div>
               <span className="font-medium">Spotify</span>
@@ -263,14 +263,14 @@ const Index = () => {
 
       {/* Contact Section */}
       <section className="py-20">
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Готовы к росту? Давайте поговорим.</h2>
-            <p className="text-xl text-muted-foreground">Расскажите нам о своей музыке и давайте создадим вашу историю успеха</p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Готовы к росту? Давайте поговорим.</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground px-2">Расскажите нам о своей музыке и давайте создадим вашу историю успеха</p>
           </div>
 
           <Card className="bg-card/50 border-border/50">
-            <CardContent className="p-8">
+            <CardContent className="p-4 sm:p-6 md:p-8">
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
