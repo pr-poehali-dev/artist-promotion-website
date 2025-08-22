@@ -259,7 +259,7 @@ const Index = () => {
 
           <div className="text-center">
             <a
-              href="https://web.telegram.org/a/#7072952092"
+              href="https://t.me/avan_muzprod_bot"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
