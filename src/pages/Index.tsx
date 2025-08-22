@@ -118,7 +118,7 @@ const Index = () => {
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto px-2">
-            Мы помогаем музыкантам увеличить аудиторию и популярность в TikTok, Instagram, YouTube, ВК и Яндекс Музыке
+            Научись управлять своим потенциалом
           </p>
           
           <a
