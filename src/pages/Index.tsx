@@ -174,7 +174,7 @@ const Index = () => {
                       {artist.description && (
                         <div>
                           <h4 className="font-semibold mb-2 text-primary">
-                            {artist.name === "АВАНТЮРИСТ" ? "Обо Мне" : "О Артисте"}
+                            {artist.name === "АВАНТЮРИСТ" ? "Результат артиста" : "О Артисте"}
                           </h4>
                           <p className="text-muted-foreground">{artist.description}</p>
                         </div>
