@@ -33,7 +33,6 @@ const Index = () => {
       achievements: ["300К+ просмотров", "70К в Instagram", "10000+ слушателей"],
       duration: "4 месяца",
       platforms: [
-        { name: "ЯМ", url: "https://music.yandex.ru/artist/12356096?utm_medium=copy_link&ref_id=f0cb5a16-eda4-49f4-a18b-86de6b3acdd4" },
         { name: "Instagram", url: "https://www.instagram.com/natasha_milnichenko?igsh=MWZ5MXBxZWJ4OXM5Ng==" }
       ],
       image: "https://cdn.poehali.dev/files/a305af05-ec8b-4f4c-a9b6-fa88a015b308.jpg"
