@@ -155,7 +155,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Истории успеха</h2>
-            <p className="text-lg sm:text-xl text-muted-foreground px-2">Реальные артисты, реальные результаты, реальный рост</p>
+            <p className="text-lg sm:text-xl text-muted-foreground px-2">Наши кейсы</p>
           </div>
           
           <div className="space-y-12">
