@@ -128,7 +128,7 @@ const Index = () => {
             className="inline-block"
           >
             <Button size="lg" className="glow-button bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
-              Стать популярным
+              Стать звездой
               <Icon name="ArrowRight" className="ml-2" size={20} />
             </Button>
           </a>
