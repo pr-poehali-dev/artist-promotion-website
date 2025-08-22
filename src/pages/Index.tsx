@@ -249,34 +249,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Наши услуги</h2>
-            <p className="text-lg sm:text-xl text-muted-foreground px-2">Все необходимое для развития музыкальной карьеры</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {services.map((service, index) => (
-              <Card key={index} className="bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 flex justify-center">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Icon name={service.icon} className="text-primary" size={24} />
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-
       {/* Contact Section */}
       <section className="py-20">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
@@ -301,17 +273,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Motivational Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-primary/20 to-accent/20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-primary">
-            И хватит уже сидеть, поднимаем попки и за работу! 🚀
-          </h3>
-          <p className="text-lg text-muted-foreground">
-            Твоя музыка не будет продвигать себя сама
-          </p>
-        </div>
-      </section>
+
     </div>
   );
 };
