@@ -55,8 +55,7 @@ const Index = () => {
       work: "Совместная работа над образом и выбор никнейма. За 1 месяц работы с нами сделала +100к просмотров.",
       achievements: ["100К+ просмотров за месяц", "Новый образ и никнейм", "Рост узнаваемости"],
       platforms: [
-        { name: "Instagram", url: "https://www.instagram.com/liza__schultz?igsh=MXBiM2l5M3NtZGZlOQ%3D%3D&utm_source=qr" },
-        { name: "ЯМ", url: "https://music.yandex.ru/artist/23694559?utm_medium=copy_link" }
+        { name: "Instagram", url: "https://www.instagram.com/liza__schultz?igsh=MXBiM2l5M3NtZGZlOQ%3D%3D&utm_source=qr" }
       ],
       image: "https://cdn.poehali.dev/files/ebd19f54-04de-45aa-b96c-21acc27a86c1.jpg"
     },
