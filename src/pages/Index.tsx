@@ -112,13 +112,13 @@ const Index = () => {
         
         <div className={`text-center max-w-4xl mx-auto px-4 sm:px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">От скрытого таланта</span>
+            <span className="gradient-text">Научись управлять</span>
             <br />
-            <span className="text-foreground">к хедлайнерам</span>
+            <span className="text-foreground">своим потенциалом</span>
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto px-2">
-            Научись управлять своим потенциалом
+            Мы помогаем музыкантам продвигать свои песни через личный бренд и вертикальный контент
           </p>
           
           <a
