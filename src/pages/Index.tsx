@@ -50,6 +50,17 @@ const Index = () => {
       image: "https://cdn.poehali.dev/files/d37ad79a-c467-4998-8677-4fda38748a1e.jpg"
     },
     {
+      name: "Лиза Шульц",
+      genre: "музыкант",
+      work: "Совместная работа над образом и выбор никнейма. За 1 месяц работы с нами сделала +100к просмотров.",
+      achievements: ["100К+ просмотров за месяц", "Новый образ и никнейм", "Рост узнаваемости"],
+      platforms: [
+        { name: "Instagram", url: "https://www.instagram.com/liza__schultz?igsh=MXBiM2l5M3NtZGZlOQ%3D%3D&utm_source=qr" },
+        { name: "ЯМ", url: "https://music.yandex.ru/artist/23694559?utm_medium=copy_link" }
+      ],
+      image: "https://cdn.poehali.dev/files/ebd19f54-04de-45aa-b96c-21acc27a86c1.jpg"
+    },
+    {
       name: "МотоТрейд",
       genre: "Компания",
       work: "Работаем не только с артистами, но и с бизнесом. Помогли найти свой формат роликов, благодаря чему увеличили узнаваемость компании.",
@@ -60,17 +71,6 @@ const Index = () => {
         { name: "Instagram", url: "https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbGdodWVRQVVCWkgybXhZaTNueFNrU1EtSHUzd3xBQ3Jtc0ttZHIwenl4bmJjWWFjZGIzNDB0MjRrQlViWjl1SkM0T1BGTmNyNGprZWlDV1F0Z0V3ZDNFQlJJZUpGUW83TjZyaTZna1JGMFFtYXVzWVhRbEdKSW43TFp4MDcyT0M1aFlKYTJzcjhHcnR1LXhYRjh0MA&q=https%3A%2F%2Fwww.instagram.com%2Fjapantrade_moto" }
       ],
       image: "https://cdn.poehali.dev/files/dd99aac0-2ce0-4a73-a941-eb0ccdc25eb7.jpg"
-    },
-    {
-      name: "Лиза Шульц",
-      genre: "музыкант",
-      work: "Совместная работа над образом и выбор никнейма. За 1 месяц работы с нами сделала +100к просмотров.",
-      achievements: ["100К+ просмотров за месяц", "Новый образ и никнейм", "Рост узнаваемости"],
-      platforms: [
-        { name: "Instagram", url: "https://www.instagram.com/liza__schultz?igsh=MXBiM2l5M3NtZGZlOQ%3D%3D&utm_source=qr" },
-        { name: "ЯМ", url: "https://music.yandex.ru/artist/23694559?utm_medium=copy_link" }
-      ],
-      image: "https://cdn.poehali.dev/files/ebd19f54-04de-45aa-b96c-21acc27a86c1.jpg"
     }
   ];
 
